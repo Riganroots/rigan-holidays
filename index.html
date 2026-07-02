@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigan Holidays | Your Gateway to the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Rigan Holidays</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>Explore the World with Rigan Holidays</h1>
+        <p>Your Gateway to the World | Customized outbound travel for Nepalese travelers.</p>
+        <div class="hero-btns">
+            <button class="btn">View Packages</button>
+            <button class="btn outline">Plan My Trip</button>
+        </div>
+    </header>
+
+    <!-- Popular Destinations -->
+    <section id="destinations">
+        <h2>Popular International Destinations</h2>
+        <div class="grid">
+            <!-- Repeat this block for each destination -->
+            <div class="card"><img src="destination-placeholder.jpg" alt="Dubai"><h3>Dubai</h3></div>
+            <div class="card"><img src="destination-placeholder.jpg" alt="Bali"><h3>Bali</h3></div>
+            <div class="card"><img src="destination-placeholder.jpg" alt="Europe"><h3>Europe</h3></div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section id="contact">
+        <div class="form-wrapper">
+            <h2>Plan Your International Trip</h2>
+            <form action="YOUR_FORM_ENDPOINT" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone / WhatsApp" required>
+                <select name="trip_type">
+                    <option value="family">Family</option>
+                    <option value="honeymoon">Honeymoon</option>
+                    <option value="group">Group Tour</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your dream trip..."></textarea>
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Rigan Holidays by Rigan Roots & Routes | Kathmandu, Nepal</p>
+    </footer>
+
+</body>
+</html>
