@@ -1,401 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Rigan Holidays | Outbound Travel from Nepal</title>
-  <meta name="description" content="Rigan Holidays offers outbound holiday packages, visa support, flights, hotels, and customized international travel experiences from Nepal." />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rigan Holidays | Your Gateway to the World</title>
+  <meta name="description" content="Rigan Holidays by Rigan Roots & Routes offers outbound holiday packages, visa documentation support, flights, hotels, and customized travel planning from Kathmandu, Nepal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <nav class="navbar">
-    <a href="#home" class="logo">
-      <div class="logo-icon">RH</div>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Rigan Holidays home">
+        <span class="brand-mark">RH</span>
+        <span class="brand-copy">
+          <strong>Rigan Holidays</strong>
+          <small>Rigan Roots &amp; Routes</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#visa">Visa Support</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-content">
+        <p class="eyebrow">Kathmandu based outbound travel agency</p>
+        <h1>Explore the World with Rigan Holidays</h1>
+        <p class="hero-subtitle">International holiday packages, honeymoon trips, family vacations, group tours, visa documentation support, flights, hotels, and customized travel experiences from Nepal.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#packages">View Packages</a>
+          <a class="btn btn-secondary" href="#contact">Plan My Trip</a>
+        </div>
+        <div class="trust-badges" aria-label="Travel support highlights">
+          <span>Customized Trips</span>
+          <span>Visa Guidance</span>
+          <span>Hotel &amp; Flight Support</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Featured travel planning">
+        <span class="panel-label">Premium Travel Desk</span>
+        <h2>Your Gateway to the World</h2>
+        <p>Curated holidays, clear documentation guidance, and attentive planning for travelers flying from Nepal.</p>
+        <div class="panel-stats">
+          <div>
+            <strong>8+</strong>
+            <span>Signature destinations</span>
+          </div>
+          <div>
+            <strong>10</strong>
+            <span>Travel services</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="destination-nav" aria-label="Destination navigation">
+      <div class="container destination-strip">
+        <a href="#destinations">Dubai</a>
+        <a href="#destinations">Thailand</a>
+        <a href="#destinations">Singapore</a>
+        <a href="#destinations">Bali</a>
+        <a href="#destinations">Malaysia</a>
+        <a href="#destinations">Japan</a>
+        <a href="#destinations">South Korea</a>
+        <a href="#destinations">Europe</a>
+      </div>
+    </section>
+
+    <section class="section-pad" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Popular destinations</p>
+          <h2>Curated escapes for every kind of traveler</h2>
+          <p>From quick city breaks to milestone celebrations, Rigan Holidays plans international journeys with comfort, clarity, and style.</p>
+        </div>
+
+        <div class="destination-grid">
+          <article class="destination-card dubai">
+            <div>
+              <h3>Dubai</h3>
+              <p>Luxury shopping, desert evenings, skyline views, and family-friendly attractions.</p>
+            </div>
+            <span>UAE</span>
+          </article>
+          <article class="destination-card thailand">
+            <div>
+              <h3>Thailand</h3>
+              <p>Beach holidays, Bangkok nightlife, island hopping, and vibrant cultural tours.</p>
+            </div>
+            <span>Asia</span>
+          </article>
+          <article class="destination-card singapore">
+            <div>
+              <h3>Singapore</h3>
+              <p>Clean city experiences, theme parks, luxury stays, and family itineraries.</p>
+            </div>
+            <span>City Escape</span>
+          </article>
+          <article class="destination-card bali">
+            <div>
+              <h3>Bali</h3>
+              <p>Romantic villas, wellness escapes, beaches, temples, and honeymoon moments.</p>
+            </div>
+            <span>Island</span>
+          </article>
+          <article class="destination-card malaysia">
+            <div>
+              <h3>Malaysia</h3>
+              <p>Kuala Lumpur city stays, Genting fun, island add-ons, and easy family travel.</p>
+            </div>
+            <span>Family</span>
+          </article>
+          <article class="destination-card japan">
+            <div>
+              <h3>Japan</h3>
+              <p>Culture, food, seasonal scenery, technology, and beautifully organized tours.</p>
+            </div>
+            <span>Culture</span>
+          </article>
+          <article class="destination-card korea">
+            <div>
+              <h3>South Korea</h3>
+              <p>Seoul city life, shopping, K-culture highlights, scenic day trips, and cuisine.</p>
+            </div>
+            <span>Experience</span>
+          </article>
+          <article class="destination-card europe">
+            <div>
+              <h3>Europe</h3>
+              <p>Multi-country group tours, iconic landmarks, guided routes, and classic cities.</p>
+            </div>
+            <span>Group Tour</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="interest-section section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Explore by interest</p>
+          <h2>Choose a holiday style that feels like you</h2>
+        </div>
+        <div class="interest-grid">
+          <a href="#packages" class="interest-card">
+            <span>Beach &amp; Island</span>
+            <strong>Bali, Thailand, Malaysia</strong>
+          </a>
+          <a href="#packages" class="interest-card">
+            <span>Romantic &amp; Honeymoon</span>
+            <strong>Private stays and special moments</strong>
+          </a>
+          <a href="#packages" class="interest-card">
+            <span>Family Holidays</span>
+            <strong>Comfortable routes for all ages</strong>
+          </a>
+          <a href="#packages" class="interest-card">
+            <span>Luxury Experiences</span>
+            <strong>Premium hotels and polished plans</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Holiday packages</p>
+          <h2>Best seller journeys from Nepal</h2>
+          <p>Filter by travel style and find a starting point for your next international holiday.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Package filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="family">Family</button>
+          <button class="filter-btn" type="button" data-filter="honeymoon">Honeymoon</button>
+          <button class="filter-btn" type="button" data-filter="group">Group</button>
+          <button class="filter-btn" type="button" data-filter="luxury">Luxury</button>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card" data-categories="family group">
+            <div class="package-image dubai"></div>
+            <div class="package-body">
+              <span class="package-badge">Family / Group</span>
+              <h3>Dubai Holiday Package</h3>
+              <p class="duration">5 Days</p>
+              <p>Enjoy city tours, desert safari, shopping time, and iconic Dubai experiences with smooth planning.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="family group">
+            <div class="package-image thailand"></div>
+            <div class="package-body">
+              <span class="package-badge">Family / Group</span>
+              <h3>Bangkok &amp; Pattaya Tour</h3>
+              <p class="duration">6 Days</p>
+              <p>Combine Bangkok city energy with Pattaya beach activities, shows, shopping, and day tours.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="family luxury">
+            <div class="package-image singapore"></div>
+            <div class="package-body">
+              <span class="package-badge">Family / Luxury</span>
+              <h3>Singapore Family Trip</h3>
+              <p class="duration">5 Days</p>
+              <p>Plan a polished family break with Universal Studios, Sentosa, gardens, and premium hotel options.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="honeymoon luxury">
+            <div class="package-image bali"></div>
+            <div class="package-body">
+              <span class="package-badge">Honeymoon / Luxury</span>
+              <h3>Bali Honeymoon Package</h3>
+              <p class="duration">6 Days</p>
+              <p>Romantic villas, candlelight moments, scenic tours, spa time, and dreamy island experiences.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="family group">
+            <div class="package-image malaysia"></div>
+            <div class="package-body">
+              <span class="package-badge">Family / Group</span>
+              <h3>Malaysia Tour Package</h3>
+              <p class="duration">5 Days</p>
+              <p>Explore Kuala Lumpur, Genting, shopping districts, local food, and convenient family activities.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="group luxury">
+            <div class="package-image japan"></div>
+            <div class="package-body">
+              <span class="package-badge">Group / Luxury</span>
+              <h3>Japan Culture Tour</h3>
+              <p class="duration">7 Days</p>
+              <p>Discover Tokyo, temples, food streets, seasonal scenery, and cultural highlights with guided flow.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="family group">
+            <div class="package-image korea"></div>
+            <div class="package-body">
+              <span class="package-badge">Family / Group</span>
+              <h3>South Korea Experience Tour</h3>
+              <p class="duration">6 Days</p>
+              <p>Experience Seoul, shopping, cultural villages, entertainment districts, and scenic excursions.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+          <article class="package-card" data-categories="group luxury">
+            <div class="package-image europe"></div>
+            <div class="package-body">
+              <span class="package-badge">Group / Luxury</span>
+              <h3>Europe Group Tour</h3>
+              <p class="duration">10 Days</p>
+              <p>Travel through classic European landmarks with coordinated hotels, transfers, and route support.</p>
+              <div class="package-footer"><strong>Price on request</strong><a href="#contact" class="inquiry-link">Inquiry</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Our services</p>
+          <h2>Complete support before you fly</h2>
+          <p>Rigan Holidays brings together planning, booking assistance, and document guidance under one trusted travel desk.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card"><h3>International holiday packages</h3><p>Ready and customized outbound holiday plans.</p></article>
+          <article class="service-card"><h3>Honeymoon packages</h3><p>Romantic itineraries with thoughtful details.</p></article>
+          <article class="service-card"><h3>Family vacation packages</h3><p>Comfortable routes and family-friendly stays.</p></article>
+          <article class="service-card"><h3>Group tours</h3><p>Coordinated trips for friends, offices, and communities.</p></article>
+          <article class="service-card"><h3>Student tour packages</h3><p>Educational and leisure travel support for students.</p></article>
+          <article class="service-card"><h3>Flight ticketing assistance</h3><p>Route, fare, and reservation guidance.</p></article>
+          <article class="service-card"><h3>Hotel booking support</h3><p>Stay options matched to budget and comfort.</p></article>
+          <article class="service-card"><h3>Visa documentation support</h3><p>Clear checklist and file preparation guidance.</p></article>
+          <article class="service-card"><h3>Travel insurance guidance</h3><p>Support choosing suitable travel insurance options.</p></article>
+          <article class="service-card"><h3>Customized itinerary planning</h3><p>Tailor-made day plans for your travel style.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visa-section section-pad" id="visa">
+      <div class="container visa-layout">
+        <div>
+          <p class="eyebrow">Visa support</p>
+          <h2>Clear document guidance for outbound travelers</h2>
+          <p>Rigan Holidays supports outbound travelers with document checklist guidance, itinerary planning, hotel booking support, flight reservation support, travel purpose preparation, and application guidance.</p>
+        </div>
+        <div class="visa-checklist" aria-label="Visa support checklist">
+          <div class="check-item">Document checklist guidance</div>
+          <div class="check-item">Hotel and itinerary support</div>
+          <div class="check-item">Travel purpose preparation</div>
+          <div class="check-item">Family, group, and honeymoon documentation support</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad why-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why choose us</p>
+          <h2>Travel planning that feels calm and considered</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card"><span>01</span><h3>Customized Planning</h3><p>Every trip is shaped around your destination, purpose, travel dates, budget, and preferred pace.</p></article>
+          <article class="why-card"><span>02</span><h3>Transparent Guidance</h3><p>You get clear information about package inclusions, documentation, and travel preparation.</p></article>
+          <article class="why-card"><span>03</span><h3>Trusted Support from Nepal</h3><p>Plan with a Kathmandu-based team that understands Nepali travelers and outbound requirements.</p></article>
+          <article class="why-card"><span>04</span><h3>Complete Travel Help</h3><p>From itinerary planning to hotels, flights, insurance guidance, and visa document support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Plan my trip</p>
+          <h2>Tell us where you want to go</h2>
+          <p>Share your travel idea and Rigan Holidays will prepare a clear next step through WhatsApp.</p>
+          <div class="contact-card">
+            <strong>Rigan Holidays</strong>
+            <span>Your Gateway to the World</span>
+            <p>Kathmandu, Nepal</p>
+          </div>
+        </div>
+
+        <form class="trip-form" id="tripForm">
+          <div class="form-row"><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" placeholder="Your full name" required></div>
+          <div class="form-row"><label for="phone">Phone / WhatsApp</label><input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX" required></div>
+          <div class="form-row"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="name@example.com"></div>
+          <div class="form-row"><label for="destinationCountry">Destination Country</label><input type="text" id="destinationCountry" name="destinationCountry" placeholder="Dubai, Japan, Europe..." required></div>
+          <div class="form-row"><label for="travelers">Number of Travelers</label><input type="number" id="travelers" name="travelers" min="1" placeholder="2" required></div>
+          <div class="form-row"><label for="travelDate">Travel Date</label><input type="date" id="travelDate" name="travelDate"></div>
+          <div class="form-row"><label for="budgetRange">Budget Range</label><select id="budgetRange" name="budgetRange" required><option value="">Select budget</option><option value="Budget friendly">Budget friendly</option><option value="Comfort">Comfort</option><option value="Premium">Premium</option><option value="Luxury">Luxury</option></select></div>
+          <div class="form-row"><label for="tripType">Trip Type</label><select id="tripType" name="tripType" required><option value="">Select trip type</option><option value="Family">Family</option><option value="Honeymoon">Honeymoon</option><option value="Group">Group</option><option value="Luxury">Luxury</option><option value="Student">Student</option><option value="Customized">Customized</option></select></div>
+          <div class="form-row form-wide"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell us your preferred cities, hotel level, travel purpose, or special requests."></textarea></div>
+          <button class="btn btn-primary form-submit" type="submit">Send Inquiry on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark">RH</span><span class="brand-copy"><strong>Rigan Holidays</strong><small>Rigan Roots &amp; Routes</small></span></a>
+        <p>Your Gateway to the World</p>
+      </div>
       <div>
-        <strong>Rigan Holidays</strong>
-        <span>By Rigan Roots & Routes</span>
+        <h3>Quick links</h3>
+        <div class="footer-links"><a href="#home">Home</a><a href="#destinations">Destinations</a><a href="#packages">Packages</a><a href="#services">Services</a><a href="#visa">Visa Support</a><a href="#contact">Contact</a></div>
       </div>
-    </a>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#destinations">Destinations</a></li>
-      <li><a href="#packages">Packages</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#visa">Visa Support</a></li>
-      <li><a class="nav-button" href="#contact">Plan My Trip</a></li>
-    </ul>
-  </nav>
-
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <div class="tagline">Outbound Travel Agency from Nepal</div>
-      <h1>Explore the World with Rigan Holidays</h1>
-      <p>
-        International holiday packages, honeymoon trips, family vacations, group tours,
-        flight support, hotel booking, visa documentation support, and customized travel experiences.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#packages" class="btn btn-primary">View Packages</a>
-        <a href="#contact" class="btn btn-secondary">Plan My Trip</a>
+      <div>
+        <h3>Contact</h3>
+        <address>Phone: +977-98XXXXXXXX<br>Email: info@riganholidays.com<br>Location: Kathmandu, Nepal</address>
       </div>
     </div>
-  </section>
-
-  <section class="section" id="destinations">
-    <div class="section-title">
-      <div class="tagline">Top Choices</div>
-      <h2>Popular International Destinations</h2>
-      <p>Choose your dream destination and let Rigan Holidays plan your international trip from Nepal.</p>
-    </div>
-
-    <div class="destination-grid">
-      <div class="destination-card dubai">Dubai</div>
-      <div class="destination-card thailand">Thailand</div>
-      <div class="destination-card singapore">Singapore</div>
-      <div class="destination-card bali">Bali</div>
-      <div class="destination-card malaysia">Malaysia</div>
-      <div class="destination-card japan">Japan</div>
-      <div class="destination-card korea">South Korea</div>
-      <div class="destination-card europe">Europe</div>
-    </div>
-  </section>
-
-  <section class="section section-light" id="packages">
-    <div class="section-title">
-      <div class="tagline">Holiday Plans</div>
-      <h2>Featured Outbound Packages</h2>
-      <p>Find the right package for family travel, honeymoon, group tour, or luxury holiday.</p>
-    </div>
-
-    <div class="filters">
-      <button class="filter-btn active" onclick="filterPackages('all', this)">All</button>
-      <button class="filter-btn" onclick="filterPackages('family', this)">Family</button>
-      <button class="filter-btn" onclick="filterPackages('honeymoon', this)">Honeymoon</button>
-      <button class="filter-btn" onclick="filterPackages('group', this)">Group</button>
-      <button class="filter-btn" onclick="filterPackages('luxury', this)">Luxury</button>
-    </div>
-
-    <div class="package-grid">
-      <div class="package-card package" data-category="family group">
-        <div class="package-img dubai">Dubai</div>
-        <div class="package-body">
-          <small>5 Days</small>
-          <h3>Dubai Holiday Package</h3>
-          <p>City tour, desert safari, shopping, hotel support, and airport transfer guidance.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card package" data-category="family group">
-        <div class="package-img thailand">Thailand</div>
-        <div class="package-body">
-          <small>6 Days</small>
-          <h3>Bangkok & Pattaya Tour</h3>
-          <p>Perfect for first-time travelers, families, and group holidays from Nepal.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card package" data-category="family luxury">
-        <div class="package-img singapore">Singapore</div>
-        <div class="package-body">
-          <small>5 Days</small>
-          <h3>Singapore Family Trip</h3>
-          <p>Family-friendly itinerary with city attractions, hotels, and smooth travel planning.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card package" data-category="honeymoon luxury">
-        <div class="package-img bali">Bali</div>
-        <div class="package-body">
-          <small>6 Days</small>
-          <h3>Bali Honeymoon Package</h3>
-          <p>Romantic beaches, private moments, premium stays, and honeymoon planning.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card package" data-category="group family">
-        <div class="package-img japan">Japan</div>
-        <div class="package-body">
-          <small>7 Days</small>
-          <h3>Japan Culture Tour</h3>
-          <p>Tokyo, culture, food, transport support, and clean travel itinerary guidance.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card package" data-category="luxury group">
-        <div class="package-img europe">Europe</div>
-        <div class="package-body">
-          <small>10 Days</small>
-          <h3>Europe Group Tour</h3>
-          <p>Multi-country travel planning, hotels, documentation guidance, and itinerary support.</p>
-          <div class="package-footer">
-            <strong>Price on request</strong>
-            <a href="#contact">Inquire</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="section-title">
-      <div class="tagline">What We Do</div>
-      <h2>Travel Services</h2>
-      <p>Everything needed for a comfortable international trip from Nepal.</p>
-    </div>
-
-    <div class="service-grid">
-      <div class="service-card">
-        <span>🌍</span>
-        <h3>International Holiday Packages</h3>
-        <p>Ready-made and customized outbound travel plans.</p>
-      </div>
-
-      <div class="service-card">
-        <span>💍</span>
-        <h3>Honeymoon Packages</h3>
-        <p>Romantic destinations, hotels, and special planning.</p>
-      </div>
-
-      <div class="service-card">
-        <span>👨‍👩‍👧</span>
-        <h3>Family Vacation</h3>
-        <p>Safe and comfortable family-friendly itineraries.</p>
-      </div>
-
-      <div class="service-card">
-        <span>🎫</span>
-        <h3>Flight Assistance</h3>
-        <p>Flight options and booking coordination support.</p>
-      </div>
-
-      <div class="service-card">
-        <span>🏨</span>
-        <h3>Hotel Booking</h3>
-        <p>Budget, standard, and luxury hotel guidance.</p>
-      </div>
-
-      <div class="service-card">
-        <span>🛡️</span>
-        <h3>Travel Insurance Guidance</h3>
-        <p>Support for choosing travel insurance options.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="visa-section" id="visa">
-    <div>
-      <div class="tagline">Documentation Support</div>
-      <h2>Visa Support for Outbound Travelers</h2>
-      <p>
-        Rigan Holidays guides travelers with document preparation, itinerary planning,
-        hotel booking support, flight reservation support, and application guidance.
-      </p>
-
-      <ul class="visa-list">
-        <li>Document checklist guidance</li>
-        <li>Hotel and itinerary support</li>
-        <li>Travel purpose and plan preparation</li>
-        <li>Family, group, and honeymoon trip documentation</li>
-      </ul>
-
-      <a href="#contact" class="btn btn-primary">Ask for Visa Support</a>
-    </div>
-
-    <div class="visa-box">
-      <h3>Best for</h3>
-      <p>Dubai, Thailand, Singapore, Bali, Malaysia, Japan, Korea, Europe, Maldives, Turkey and more.</p>
-    </div>
-  </section>
-
-  <section class="section section-light">
-    <div class="section-title">
-      <div class="tagline">Why Us</div>
-      <h2>Why Choose Rigan Holidays?</h2>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <strong>01</strong>
-        <h3>Customized Planning</h3>
-        <p>Trips are planned based on your budget, dates, and travel style.</p>
-      </div>
-
-      <div class="why-card">
-        <strong>02</strong>
-        <h3>Transparent Guidance</h3>
-        <p>Clear details about services, documents, and travel arrangements.</p>
-      </div>
-
-      <div class="why-card">
-        <strong>03</strong>
-        <h3>Trusted from Nepal</h3>
-        <p>Local support in Kathmandu for international travel planning.</p>
-      </div>
-
-      <div class="why-card">
-        <strong>04</strong>
-        <h3>Complete Travel Help</h3>
-        <p>Packages, hotels, flights, insurance, and visa documentation support.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">
-      <div class="tagline">Traveler Stories</div>
-      <h2>What Our Travelers Say</h2>
-    </div>
-
-    <div class="review-grid">
-      <div class="review-card">
-        “The itinerary was clear and easy. Our Thailand trip was well planned from Nepal.”
-        <strong>— Family Traveler</strong>
-      </div>
-
-      <div class="review-card">
-        “Rigan Holidays helped us plan our honeymoon with hotel and travel guidance.”
-        <strong>— Honeymoon Couple</strong>
-      </div>
-
-      <div class="review-card">
-        “Good support for documents, package details, and travel planning.”
-        <strong>— Group Traveler</strong>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div>
-      <div class="tagline">Start Your Journey</div>
-      <h2>Plan Your International Trip</h2>
-      <p>Send your travel details and our team will contact you with the best package options.</p>
-
-      <div class="contact-info">
-        <strong>Rigan Holidays</strong>
-        <span>By Rigan Roots & Routes</span>
-        <span>Kathmandu, Nepal</span>
-        <span>Phone: +977-98XXXXXXXX</span>
-        <span>Email: info@riganholidays.com</span>
-      </div>
-    </div>
-
-    <form id="tripForm">
-      <div class="form-row">
-        <label>
-          Full Name
-          <input type="text" name="name" required placeholder="Your name" />
-        </label>
-
-        <label>
-          Phone / WhatsApp
-          <input type="tel" name="phone" required placeholder="+977..." />
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com" />
-        </label>
-
-        <label>
-          Destination Country
-          <input type="text" name="destination" required placeholder="Dubai, Thailand, Japan..." />
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Number of Travelers
-          <input type="number" name="travelers" min="1" placeholder="2" />
-        </label>
-
-        <label>
-          Travel Date
-          <input type="date" name="date" />
-        </label>
-      </div>
-
-      <div class="form-row">
-        <label>
-          Budget Range
-          <select name="budget">
-            <option value="">Select budget</option>
-            <option>NPR 50,000 - 100,000</option>
-            <option>NPR 100,000 - 200,000</option>
-            <option>NPR 200,000 - 500,000</option>
-            <option>NPR 500,000+</option>
-          </select>
-        </label>
-
-        <label>
-          Trip Type
-          <select name="type">
-            <option value="">Select type</option>
-            <option>Family</option>
-            <option>Honeymoon</option>
-            <option>Group</option>
-            <option>Student</option>
-            <option>Business</option>
-            <option>Luxury</option>
-          </select>
-        </label>
-      </div>
-
-      <label>
-        Message
-        <textarea name="message" rows="5" placeholder="Tell us your travel plan..."></textarea>
-      </label>
-
-      <button type="submit" class="submit-btn">Submit Inquiry on WhatsApp</button>
-    </form>
-  </section>
-
-  <footer class="footer">
-    <div>
-      <strong>Rigan Holidays</strong>
-      <p>Your Gateway to the World</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="#destinations">Destinations</a>
-      <a href="#packages">Packages</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <p>© <span id="year"></span> Rigan Holidays. All rights reserved.</p>
+    <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Rigan Holidays. All rights reserved.</p></div>
   </footer>
 
-  <a class="whatsapp" href="https://wa.me/9779800000000" target="_blank">💬</a>
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
