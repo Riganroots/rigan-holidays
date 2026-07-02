@@ -1,54 +1,74 @@
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("open");
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-menu a");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const packageCards = document.querySelectorAll(".package-card");
+const tripForm = document.getElementById("tripForm");
+const currentYear = document.getElementById("currentYear");
+
+const whatsAppNumber = "9779800000000";
+
+if (currentYear) {
+  currentYear.textContent = new Date().getFullYear();
 }
 
-function filterPackages(category, button) {
-  const buttons = document.querySelectorAll(".filter-btn");
-  const packages = document.querySelectorAll(".package");
-
-  buttons.forEach(function(btn) {
-    btn.classList.remove("active");
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", function () {
+    const isOpen = navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("menu-open", isOpen);
   });
 
-  button.classList.add("active");
-
-  packages.forEach(function(card) {
-    const cardCategory = card.getAttribute("data-category");
-
-    if (category === "all" || cardCategory.includes(category)) {
-      card.classList.remove("hidden");
-    } else {
-      card.classList.add("hidden");
-    }
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      navMenu.classList.remove("active");
+      menuToggle.classList.remove("active");
+      menuToggle.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
+    });
   });
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+filterButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    const selectedFilter = button.dataset.filter;
 
-document.getElementById("tripForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+    filterButtons.forEach(function (item) {
+      item.classList.remove("active");
+    });
+    button.classList.add("active");
 
-  const formData = new FormData(this);
-  const data = Object.fromEntries(formData.entries());
-
-  const phoneNumber = "9779800000000";
-
-  const message = `
-Hello Rigan Holidays,
-
-I want to plan an international trip.
-
-Name: ${data.name}
-Phone: ${data.phone}
-Email: ${data.email || "Not provided"}
-Destination: ${data.destination}
-Travelers: ${data.travelers || "Not provided"}
-Travel Date: ${data.date || "Not provided"}
-Budget: ${data.budget || "Not provided"}
-Trip Type: ${data.type || "Not provided"}
-Message: ${data.message || "Not provided"}
-  `.trim();
-
-  const whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-  window.open(whatsappUrl, "_blank");
+    packageCards.forEach(function (card) {
+      const categories = card.dataset.categories.split(" ");
+      const shouldShow = selectedFilter === "all" || categories.includes(selectedFilter);
+      card.classList.toggle("hidden", !shouldShow);
+    });
+  });
 });
+
+if (tripForm) {
+  tripForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(tripForm);
+    const inquiryLines = [
+      "Hello Rigan Holidays, I would like to plan an international trip.",
+      "",
+      "Full Name: " + (formData.get("fullName") || ""),
+      "Phone / WhatsApp: " + (formData.get("phone") || ""),
+      "Email: " + (formData.get("email") || ""),
+      "Destination Country: " + (formData.get("destinationCountry") || ""),
+      "Number of Travelers: " + (formData.get("travelers") || ""),
+      "Travel Date: " + (formData.get("travelDate") || ""),
+      "Budget Range: " + (formData.get("budgetRange") || ""),
+      "Trip Type: " + (formData.get("tripType") || ""),
+      "Message: " + (formData.get("message") || ""),
+      "",
+      "Please share package details and the next steps."
+    ];
+
+    const whatsAppUrl = "https://wa.me/" + whatsAppNumber + "?text=" + encodeURIComponent(inquiryLines.join("\n"));
+    window.open(whatsAppUrl, "_blank", "noopener,noreferrer");
+  });
+}
